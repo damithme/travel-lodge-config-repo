@@ -1,1 +1,27 @@
-password: test-pass
+spring:
+  application:
+    name: user-service
+  cloud:
+    kubernetes:
+      discovery:
+        all-namespaces: false
+      enabled: false
+
+  data:
+    mongodb:
+      authentication-database: admin
+      username: root
+      password: rootpassword
+      database: users
+      port: 27017
+      host: localhost
+
+server:
+  port: 6011
+
+dekorate:
+  kubernates:
+    serviceType: "NodePort"
+eureka:
+  client:
+    enabled: true
