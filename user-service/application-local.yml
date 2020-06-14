@@ -9,7 +9,7 @@ spring:
 
   data:
     mongodb:
-      uri: mongodb://root:'{cipher}67e3bf3353dfd2c5514ad8e042ef630424d30ce4b13b6a3000bb778580dcf8ce'@localhost:27017
+      uri: mongodb://admin:'{cipher}67e3bf3353dfd2c5514ad8e042ef630424d30ce4b13b6a3000bb778580dcf8ce'@localhost:27017
       authentication-database: admin
 
 server:
