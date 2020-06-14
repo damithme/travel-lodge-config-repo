@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: extra-service
+  cloud:
+    kubernetes:
+      discovery:
+        all-namespaces: false
+      enabled: false
+
+  data:
+    mongodb:
+      authentication-database: admin
+      username: root
+      password: '{cipher}67e3bf3353dfd2c5514ad8e042ef630424d30ce4b13b6a3000bb778580dcf8ce'
+      database: extras
+      port: 27017
+      host: localhost
+
+server:
+  port: 6014
+
+dekorate:
+  kubernates:
+    serviceType: "NodePort"
+eureka:
+  client:
+    enabled: true
